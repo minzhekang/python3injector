@@ -1,7 +1,7 @@
 ![trainer](https://media.giphy.com/media/l0phAXbyTJ9hdFIPos/giphy.gif)
 
 Trainer made for assault cube using the lessons learnt from writing an injector. Approach is slightly different here where I didn't 
-use `LoadLibraryW` to fire up the dll file within the process. Instead, the multi-level pointer was found using Cheat Engine and the
+use `LoadLibraryW` to fire up the dll file within the process. Instead, the multi-level pointer was found and the
 address variables were passed into the python application using ctypes. `WriteProcessMemory` and `ReadProcessMemory` is then used to
 read the memory of the game files and then write to it accordingly.
 
